@@ -30,7 +30,7 @@ public class DemoApplication {
 	}
 
 	public static Throwable unwrap(Throwable ex) {
-		
+
 		if (ex != null && BeanCreationException.class.isAssignableFrom(ex.getClass())) {
 			return unwrap(ex.getCause());
 		} else {

@@ -27,7 +27,7 @@ public class OrderController {
 
     @PostMapping("/orderdetails")
     public List<Order> getOrders(@Valid @RequestBody Status status){
-
+       System.out.println("orsedr");
         return service.getOrderDetailsBYName(status.getName());
     }
 
